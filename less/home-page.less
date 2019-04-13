@@ -58,7 +58,17 @@
       }
 
       .btn {
-      }
+        .btn(@porcelain, @btn-bg-color);
+     
+        @media @phone {
+         width: 100%;
+         
+       }
+     }
+    
+     div:hover {
+       background-color: @porcelain;
+      color: @btn-bg-color;
     }
 
     .walk-img {
@@ -73,3 +83,6 @@
     }
   }
 }// home
+}
+
+
