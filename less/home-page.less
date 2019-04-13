@@ -18,12 +18,16 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+   
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 80%; 
+     }
     }
   }
 
@@ -45,9 +49,19 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      order: -1;
+    }
+  }
 
     .walk-text {
-      width: 50%;
+      width: 100%;
+      
 
       h3 {
         margin-bottom: 10px;
@@ -57,11 +71,14 @@
         margin-bottom: 26px;
       }
 
+
       .btn {
         .btn(@porcelain, @btn-bg-color);
      
         @media @phone {
-         width: 100%;
+         width: 80%;
+         
+         
          
        }
      }
@@ -79,10 +96,64 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @phone {
+          width: 80%; 
+       }
       }
     }
   }
 }// home
+
+
+
+.walk{
+  @media @phone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: -1;
+  }
+}
+.walk-text{
+  @media @phone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center
+    
+  }
 }
 
+.walk-img{
+  @media @phone {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: -1 ;
+  }
+}
+
+ .sky {
+   @media @phone {
+.none;
+   }
+ }
+
+ .launch {
+  @media @phone {
+    .none;
+  }
+}
+
+.main-header-img {
+  @media @phone {
+    width: 100%; 
+  }
+}
 
