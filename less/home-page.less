@@ -26,7 +26,7 @@
       border-radius: 20px;
       height: 100%;
       @media @phone {
-        width: 80%; 
+        width: 100%; 
      }
     }
   }
@@ -46,7 +46,7 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    // padding: 50px 60px;
     display: flex;
     justify-content: center;
     @media @phone {
@@ -61,6 +61,7 @@
 
     .walk-text {
       width: 100%;
+      padding: 0% 3%;
       
 
       h3 {
@@ -74,13 +75,6 @@
 
       .btn {
         .btn(@porcelain, @btn-bg-color);
-     
-        @media @phone {
-         width: 80%;
-         
-         
-         
-       }
      }
     
      div:hover {
@@ -91,6 +85,7 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+     
       
       img {
         width: 100%;
@@ -105,15 +100,20 @@
 }// home
 
 
-
+.walk-rad{
+  border-radius: 10px;
+}
 .walk{
+  padding: 5% 2%;
   @media @phone {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
     order: -1;
+    padding-bottom: 10px;
   }
 }
 .walk-text{
@@ -123,25 +123,28 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    text-align: center
-    
+
   }
 }
 
 .walk-img{
-  @media @phone {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    order: -1 ;
-  }
+
+  border-radius: 20px;
+  height: 100%;
+ @media @phone {  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 25px;
+   order: -1 ;
+       }
 }
 
  .sky {
    @media @phone {
-.none;
+    .none;
    }
  }
 
