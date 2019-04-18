@@ -1,1 +1,22 @@
 // Mixins Here
+
+.btn(@btn-color, @btn-bg-color){
+    width: 30%;
+	background-color: @btn-bg-color;
+    color: @btn-color;
+	cursor: pointer;
+	padding: 8px;
+	margin-top: 10px;
+	font-size: 1.8rem;
+	border-radius: 10px;
+    text-align: center;
+    @media @phone {
+       width: 90%;
+       border-radius: 3px;
+       margin: 2%;
+       
+    }
+}
+      .none {
+        display: none;
+      }
